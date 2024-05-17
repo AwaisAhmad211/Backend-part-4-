@@ -1,0 +1,17 @@
+is part mai ham express js ky bary mai daikhy gy
+*  express js aik framework hai jisy ham npm sy download karty hai means ye aik pakage bhi hai.ye is liye use hota hai 
+   1 : koi bhi request ko accept karny,process karny or phr response bhaijny ky.
+   2 : ye web pages ky liye routes create karny ky liye use hota hai.
+* setting up a basic express application is given below :
+
+const express = require('express')
+const app = express();
+
+app.get("/",(req,res)=>{
+    res.send("Hello World")
+})
+
+app.listen(3000);
+
+*  Middleware : 
+Middleware route or server ky darmiyan ka element hai. Middleware is liye use hota hai agr hamary pass kuch request ati hai lakin ham osy direct route par nahi bhaijna chaate to phr ham darmiyan mai Middleware use kary gy. Middleware request par kuch operations perform karti hai or phr osy next Middleware ya route ko dy daiti hahi. Middleware ko ham 2 tarha sy use karty hai jin mai sy aik ye hai :
